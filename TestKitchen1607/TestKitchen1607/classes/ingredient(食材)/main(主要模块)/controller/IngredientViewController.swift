@@ -13,8 +13,18 @@ class IngredientViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.redColor()
-        // Do any additional setup after loading the view.
+        downloadRecommendData()
     }
+    
+    //下载首页的推荐数据
+    func downloadRecommendData() {
+        //methodName=SceneHome&token=&user_id=&version=4.5
+        let params = ["methodName":"SceneHome","token":"","user_id":"","version":"4.5"]
+        let downloader = KTCDownloader()
+        downloader.delegate = self
+        downloader.postWituUrl(kHostUrl, params: params)
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,4 +43,18 @@ class IngredientViewController: BaseViewController {
      */
     
     
+}
+
+//MARK:KTCDownloader代理
+extension IngredientViewController:KTCDownloaderDelegate {
+    //下载shib
+    func downloader(downloader: KTCDownloader, didFailWithError error: NSError) {
+        print(error)
+    }
+    
+    //下载成功
+    func downloader(downloader: KTCDownloader, didFinishWithData data: NSData?) {
+        let str = NSString(data: data!, encoding: NSUTF8StringEncoding)
+        print(str)
+    }
 }

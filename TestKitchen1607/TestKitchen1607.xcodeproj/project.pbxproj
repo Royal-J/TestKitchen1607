@@ -11,6 +11,9 @@
 		46E0736B1DB9B983007A880C /* UIView+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0736A1DB9B983007A880C /* UIView+Common.swift */; };
 		46E0736D1DB9BA27007A880C /* UILabel+Commom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0736C1DB9BA27007A880C /* UILabel+Commom.swift */; };
 		46E0736F1DB9BB90007A880C /* UIButton+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0736E1DB9BB90007A880C /* UIButton+Common.swift */; };
+		46F495D61DBD9C10004ED371 /* Controllers.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F495D51DBD9C10004ED371 /* Controllers.json */; };
+		46F495D81DBDACE9004ED371 /* KTCDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F495D71DBDACE9004ED371 /* KTCDownloader.swift */; };
+		46F495DA1DBDB6CF004ED371 /* IngreRecommend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F495D91DBDB6CF004ED371 /* IngreRecommend.swift */; };
 		46F4B6201DB9A50F0051FC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F4B61F1DB9A50F0051FC25 /* AppDelegate.swift */; };
 		46F4B6221DB9A50F0051FC25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F4B6211DB9A50F0051FC25 /* ViewController.swift */; };
 		46F4B6251DB9A50F0051FC25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F4B6231DB9A50F0051FC25 /* Main.storyboard */; };
@@ -70,6 +73,9 @@
 		46E0736A1DB9B983007A880C /* UIView+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Common.swift"; sourceTree = "<group>"; };
 		46E0736C1DB9BA27007A880C /* UILabel+Commom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Commom.swift"; sourceTree = "<group>"; };
 		46E0736E1DB9BB90007A880C /* UIButton+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Common.swift"; sourceTree = "<group>"; };
+		46F495D51DBD9C10004ED371 /* Controllers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Controllers.json; sourceTree = "<group>"; };
+		46F495D71DBDACE9004ED371 /* KTCDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTCDownloader.swift; sourceTree = "<group>"; };
+		46F495D91DBDB6CF004ED371 /* IngreRecommend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreRecommend.swift; sourceTree = "<group>"; };
 		46F4B61C1DB9A50F0051FC25 /* TestKitchen1607.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestKitchen1607.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F4B61F1DB9A50F0051FC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46F4B6211DB9A50F0051FC25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +224,8 @@
 				46E0736C1DB9BA27007A880C /* UILabel+Commom.swift */,
 				46E0736E1DB9BB90007A880C /* UIButton+Common.swift */,
 				46734DF11DB9C38C009D5D67 /* Const.swift */,
+				46F495D51DBD9C10004ED371 /* Controllers.json */,
+				46F495D71DBDACE9004ED371 /* KTCDownloader.swift */,
 			);
 			path = "common(公共类)";
 			sourceTree = "<group>";
@@ -365,6 +373,7 @@
 		46F4B6601DB9A82D0051FC25 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				46F495D91DBDB6CF004ED371 /* IngreRecommend.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -748,6 +757,7 @@
 				46F4B6AA1DB9AF790051FC25 /* mine_select@2x.png in Resources */,
 				46F4B6AE1DB9AF790051FC25 /* shike_select@2x.png in Resources */,
 				46F4B6AF1DB9AF790051FC25 /* shike_select@3x.png in Resources */,
+				46F495D61DBD9C10004ED371 /* Controllers.json in Resources */,
 				46F4B6A01DB9AF790051FC25 /* community_normal@2x.png in Resources */,
 				46F4B6A81DB9AF790051FC25 /* mine_normal@2x.png in Resources */,
 				46F4B6A51DB9AF790051FC25 /* home_normal@3x.png in Resources */,
@@ -841,12 +851,14 @@
 				46F4B6761DB9A9110051FC25 /* BaseViewController.swift in Sources */,
 				46F4B6781DB9A9E50051FC25 /* IngredientViewController.swift in Sources */,
 				46E0736D1DB9BA27007A880C /* UILabel+Commom.swift in Sources */,
+				46F495DA1DBDB6CF004ED371 /* IngreRecommend.swift in Sources */,
 				46F4B6821DB9AB870051FC25 /* MainTabBarViewController.swift in Sources */,
 				46F4B67C1DB9AA730051FC25 /* FoodClassViewController.swift in Sources */,
 				46F4B6221DB9A50F0051FC25 /* ViewController.swift in Sources */,
 				46F4B6201DB9A50F0051FC25 /* AppDelegate.swift in Sources */,
 				46F4B6801DB9AAB00051FC25 /* ProfileViewController.swift in Sources */,
 				46E0736F1DB9BB90007A880C /* UIButton+Common.swift in Sources */,
+				46F495D81DBDACE9004ED371 /* KTCDownloader.swift in Sources */,
 				46F4B67E1DB9AA920051FC25 /* CommunityViewController.swift in Sources */,
 				46734DF21DB9C38C009D5D67 /* Const.swift in Sources */,
 			);
@@ -991,6 +1003,7 @@
 			baseConfigurationReference = 87A7D2D3B4F4E771B7F0DE46 /* Pods-TestKitchen1607.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TestKitchen1607/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HJ.TestKitchen1607;
@@ -1003,6 +1016,7 @@
 			baseConfigurationReference = F9657E9D79C49AD2A6BB7141 /* Pods-TestKitchen1607.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TestKitchen1607/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HJ.TestKitchen1607;
