@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		46734DF21DB9C38C009D5D67 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46734DF11DB9C38C009D5D67 /* Const.swift */; };
+		46C811421DBEED7900B955F4 /* IngreRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C811411DBEED7900B955F4 /* IngreRecommendView.swift */; };
+		46C811451DBEF39B00B955F4 /* IngreBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C811431DBEF39B00B955F4 /* IngreBannerCell.swift */; };
+		46C811461DBEF39B00B955F4 /* IngreBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46C811441DBEF39B00B955F4 /* IngreBannerCell.xib */; };
+		46C811481DBEF82300B955F4 /* sdefaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 46C811471DBEF82300B955F4 /* sdefaultImage.png */; };
+		46C8114B1DBF09F700B955F4 /* IngreLikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C811491DBF09F700B955F4 /* IngreLikeCell.swift */; };
+		46C8114C1DBF09F700B955F4 /* IngreLikeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46C8114A1DBF09F700B955F4 /* IngreLikeCell.xib */; };
 		46E0736B1DB9B983007A880C /* UIView+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0736A1DB9B983007A880C /* UIView+Common.swift */; };
 		46E0736D1DB9BA27007A880C /* UILabel+Commom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0736C1DB9BA27007A880C /* UILabel+Commom.swift */; };
 		46E0736F1DB9BB90007A880C /* UIButton+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0736E1DB9BB90007A880C /* UIButton+Common.swift */; };
@@ -70,6 +76,12 @@
 
 /* Begin PBXFileReference section */
 		46734DF11DB9C38C009D5D67 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		46C811411DBEED7900B955F4 /* IngreRecommendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreRecommendView.swift; sourceTree = "<group>"; };
+		46C811431DBEF39B00B955F4 /* IngreBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreBannerCell.swift; sourceTree = "<group>"; };
+		46C811441DBEF39B00B955F4 /* IngreBannerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngreBannerCell.xib; sourceTree = "<group>"; };
+		46C811471DBEF82300B955F4 /* sdefaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sdefaultImage.png; sourceTree = "<group>"; };
+		46C811491DBF09F700B955F4 /* IngreLikeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreLikeCell.swift; sourceTree = "<group>"; };
+		46C8114A1DBF09F700B955F4 /* IngreLikeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngreLikeCell.xib; sourceTree = "<group>"; };
 		46E0736A1DB9B983007A880C /* UIView+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Common.swift"; sourceTree = "<group>"; };
 		46E0736C1DB9BA27007A880C /* UILabel+Commom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Commom.swift"; sourceTree = "<group>"; };
 		46E0736E1DB9BB90007A880C /* UIButton+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Common.swift"; sourceTree = "<group>"; };
@@ -381,6 +393,7 @@
 		46F4B6611DB9A82D0051FC25 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				46C811411DBEED7900B955F4 /* IngreRecommendView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -443,6 +456,10 @@
 		46F4B6691DB9A82D0051FC25 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				46C811431DBEF39B00B955F4 /* IngreBannerCell.swift */,
+				46C811441DBEF39B00B955F4 /* IngreBannerCell.xib */,
+				46C811491DBF09F700B955F4 /* IngreLikeCell.swift */,
+				46C8114A1DBF09F700B955F4 /* IngreLikeCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -580,6 +597,7 @@
 		46F4B6991DB9AF790051FC25 /* 公共 */ = {
 			isa = PBXGroup;
 			children = (
+				46C811471DBEF82300B955F4 /* sdefaultImage.png */,
 			);
 			path = "公共";
 			sourceTree = "<group>";
@@ -756,6 +774,7 @@
 				46F4B6AB1DB9AF790051FC25 /* mine_select@3x.png in Resources */,
 				46F4B6AA1DB9AF790051FC25 /* mine_select@2x.png in Resources */,
 				46F4B6AE1DB9AF790051FC25 /* shike_select@2x.png in Resources */,
+				46C8114C1DBF09F700B955F4 /* IngreLikeCell.xib in Resources */,
 				46F4B6AF1DB9AF790051FC25 /* shike_select@3x.png in Resources */,
 				46F495D61DBD9C10004ED371 /* Controllers.json in Resources */,
 				46F4B6A01DB9AF790051FC25 /* community_normal@2x.png in Resources */,
@@ -765,8 +784,10 @@
 				46F4B6B31DB9AF790051FC25 /* shop_select@3x.png in Resources */,
 				46F4B6A71DB9AF790051FC25 /* home_select@3x.png in Resources */,
 				46F4B6271DB9A50F0051FC25 /* Assets.xcassets in Resources */,
+				46C811481DBEF82300B955F4 /* sdefaultImage.png in Resources */,
 				46F4B6A91DB9AF790051FC25 /* mine_normal@3x.png in Resources */,
 				46F4B6A11DB9AF790051FC25 /* community_normal@3x.png in Resources */,
+				46C811461DBEF39B00B955F4 /* IngreBannerCell.xib in Resources */,
 				46F4B6B11DB9AF790051FC25 /* shop_normal@3x.png in Resources */,
 				46F4B6B21DB9AF790051FC25 /* shop_select@2x.png in Resources */,
 				46F4B6AC1DB9AF790051FC25 /* shike_normal@2x.png in Resources */,
@@ -847,6 +868,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46F4B67A1DB9AA540051FC25 /* MallViewController.swift in Sources */,
+				46C811451DBEF39B00B955F4 /* IngreBannerCell.swift in Sources */,
 				46E0736B1DB9B983007A880C /* UIView+Common.swift in Sources */,
 				46F4B6761DB9A9110051FC25 /* BaseViewController.swift in Sources */,
 				46F4B6781DB9A9E50051FC25 /* IngredientViewController.swift in Sources */,
@@ -857,8 +879,10 @@
 				46F4B6221DB9A50F0051FC25 /* ViewController.swift in Sources */,
 				46F4B6201DB9A50F0051FC25 /* AppDelegate.swift in Sources */,
 				46F4B6801DB9AAB00051FC25 /* ProfileViewController.swift in Sources */,
+				46C8114B1DBF09F700B955F4 /* IngreLikeCell.swift in Sources */,
 				46E0736F1DB9BB90007A880C /* UIButton+Common.swift in Sources */,
 				46F495D81DBDACE9004ED371 /* KTCDownloader.swift in Sources */,
+				46C811421DBEED7900B955F4 /* IngreRecommendView.swift in Sources */,
 				46F4B67E1DB9AA920051FC25 /* CommunityViewController.swift in Sources */,
 				46734DF21DB9C38C009D5D67 /* Const.swift in Sources */,
 			);
