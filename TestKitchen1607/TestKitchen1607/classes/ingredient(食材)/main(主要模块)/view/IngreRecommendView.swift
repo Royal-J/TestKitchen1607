@@ -8,7 +8,16 @@
 
 import UIKit
 
+//定义食材首页Widget列表的类型
+public enum IngreWidgetType: Int {
+    case GuessYouLike = 1  //猜你喜欢
+    case RedPacket = 2  //红包入口
+}
+
+
 class IngreRecommendView: UIView {
+    
+    var jumpClosure: IngreJumpClosure?
 
     //数据
     var model: IngreRecommend? {
@@ -51,22 +60,107 @@ class IngreRecommendView: UIView {
 extension IngreRecommendView: UITableViewDelegate,  UITableViewDataSource {
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         //banner广告部分显示一个分组
-        return 1
+        var section = 1
+        if model?.data?.widgetList?.count > 0{
+            section += (model?.data?.widgetList?.count)!
+        }
+        return section
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //banner广告的section显示一行
-        return 1
+        var row = 0
+        if section == 0 {
+            //广告
+            row = 1
+        }else{
+            //获取list对象
+            let listModel = model?.data?.widgetList![section-1]
+            if (listModel?.widget_type?.integerValue)! == IngreWidgetType.GuessYouLike.rawValue || (listModel?.widget_type?.integerValue)! == IngreWidgetType.RedPacket.rawValue {
+                //猜你喜欢/红包入口
+                row = 1
+            }
+        }
+        return row
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         //banner广告高度为140
-        return 140
+        var height: CGFloat = 0
+        if indexPath.section == 0{
+            //banner广告
+            height = 140
+        }else{
+            let listModel = model?.data?.widgetList![indexPath.section-1]
+            if listModel?.widget_type?.integerValue == IngreWidgetType.GuessYouLike.rawValue {
+                //猜你喜欢
+                height = 70
+            }else if listModel?.widget_type?.integerValue == IngreWidgetType.RedPacket.rawValue {
+                //红包入口
+                height = 75
+            }
+        }
+        return height
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        if indexPath.section == 0 {
+            //banner广告
+            let cell = IngreBannerCell.createBannerCellFor(tableView, atIndexPath: indexPath, bannerArray: model?.data!.bannerArray)
+            //点击事件的响应代码
+            cell.jumpClosure = jumpClosure
+            return cell
+        }else{
+            //猜你喜欢
+            let listModel = model?.data?.widgetList![indexPath.section-1]
+            if listModel?.widget_type?.integerValue == IngreWidgetType.GuessYouLike.rawValue {
                 
-        let cell = IngreBannerCell.createBannerCellFor(tableView, atIndexPath: indexPath, bannerArray: model?.data!.bannerArray)
-        return cell
+                let cell = IngreLikeCell.createLikeCellFor(tableView, atIndexPath: indexPath, listModel: listModel)
+                
+                //点击事件
+                cell.jumpClosure = jumpClosure
+                
+                return cell
+            }else if listModel?.widget_type?.integerValue == IngreWidgetType.RedPacket.rawValue {
+                
+                let cell = IngreRedPacketCell.createRedPacketCellFor(tableView, atIndexPath: indexPath, listModel: listModel!)
+                
+                //点击事件
+                cell.jumpClosure = jumpClosure
+                
+                return cell
+            }
+
+            
+        }
+        
+        
+        return UITableViewCell()
     }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section > 0 {
+            let listModel = model?.data?.widgetList![section-1]
+            if listModel?.widget_type?.integerValue == IngreWidgetType.GuessYouLike.rawValue {
+                //猜你喜欢的分组的header
+                let likeHeaderView = IngreLikeHeaderView(frame: CGRectMake(0, 0, (tbView?.bounds.size.width)!, 44))
+                return likeHeaderView
+            }
+        }
+        return nil
+    }
+    
+    //设置header的高度
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        var height: CGFloat = 0
+        if section > 0 {
+            let listModel = model?.data?.widgetList![section-1]
+            if listModel?.widget_type?.integerValue == IngreWidgetType.GuessYouLike.rawValue {
+                height = 44
+            }
+        }
+        return height
+    }
+    
 }
