@@ -27,6 +27,13 @@ class IngreBannerCell: UITableViewCell {
     //显示数据
     private func showData() {
         
+        //滚动视图默认添加了一些子视图，删除子视图时要考虑一下会不会影响这些子视图
+        //删除滚动视图之前的子视图
+        for sub in scrollView.subviews {
+            sub.removeFromSuperview()
+        }
+        
+        
         //遍历添加图片
         let cnt = bannerArray?.count
         if bannerArray?.count > 0 {

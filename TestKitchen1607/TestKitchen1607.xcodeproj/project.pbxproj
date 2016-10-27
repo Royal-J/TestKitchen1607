@@ -11,6 +11,12 @@
 		4600239A1DC05501007A8270 /* search1.png in Resources */ = {isa = PBXBuildFile; fileRef = 460023991DC05501007A8270 /* search1.png */; };
 		4600239D1DC0598C007A8270 /* IngreRedPacketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600239B1DC0598C007A8270 /* IngreRedPacketCell.swift */; };
 		4600239E1DC0598C007A8270 /* IngreRedPacketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4600239C1DC0598C007A8270 /* IngreRedPacketCell.xib */; };
+		460786C61DC19575007BFFCC /* IngreTodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460786C41DC19575007BFFCC /* IngreTodayCell.swift */; };
+		460786C71DC19575007BFFCC /* IngreTodayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 460786C51DC19575007BFFCC /* IngreTodayCell.xib */; };
+		460786CA1DC19A66007BFFCC /* play-A@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 460786C81DC19A66007BFFCC /* play-A@2x.png */; };
+		460786CB1DC19A66007BFFCC /* play-A@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 460786C91DC19A66007BFFCC /* play-A@3x.png */; };
+		460786CD1DC1AF6E007BFFCC /* IngreHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460786CC1DC1AF6E007BFFCC /* IngreHeaderView.swift */; };
+		460786CF1DC1B0F4007BFFCC /* more_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 460786CE1DC1B0F4007BFFCC /* more_icon.png */; };
 		46734DF21DB9C38C009D5D67 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46734DF11DB9C38C009D5D67 /* Const.swift */; };
 		46C811421DBEED7900B955F4 /* IngreRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C811411DBEED7900B955F4 /* IngreRecommendView.swift */; };
 		46C811451DBEF39B00B955F4 /* IngreBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C811431DBEF39B00B955F4 /* IngreBannerCell.swift */; };
@@ -83,6 +89,12 @@
 		460023991DC05501007A8270 /* search1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search1.png; sourceTree = "<group>"; };
 		4600239B1DC0598C007A8270 /* IngreRedPacketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreRedPacketCell.swift; sourceTree = "<group>"; };
 		4600239C1DC0598C007A8270 /* IngreRedPacketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngreRedPacketCell.xib; sourceTree = "<group>"; };
+		460786C41DC19575007BFFCC /* IngreTodayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreTodayCell.swift; sourceTree = "<group>"; };
+		460786C51DC19575007BFFCC /* IngreTodayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngreTodayCell.xib; sourceTree = "<group>"; };
+		460786C81DC19A66007BFFCC /* play-A@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-A@2x.png"; sourceTree = "<group>"; };
+		460786C91DC19A66007BFFCC /* play-A@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-A@3x.png"; sourceTree = "<group>"; };
+		460786CC1DC1AF6E007BFFCC /* IngreHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreHeaderView.swift; sourceTree = "<group>"; };
+		460786CE1DC1B0F4007BFFCC /* more_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more_icon.png; sourceTree = "<group>"; };
 		46734DF11DB9C38C009D5D67 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		46C811411DBEED7900B955F4 /* IngreRecommendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreRecommendView.swift; sourceTree = "<group>"; };
 		46C811431DBEF39B00B955F4 /* IngreBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreBannerCell.swift; sourceTree = "<group>"; };
@@ -471,6 +483,9 @@
 				460023971DC053B1007A8270 /* IngreLikeHeaderView.swift */,
 				4600239B1DC0598C007A8270 /* IngreRedPacketCell.swift */,
 				4600239C1DC0598C007A8270 /* IngreRedPacketCell.xib */,
+				460786C41DC19575007BFFCC /* IngreTodayCell.swift */,
+				460786C51DC19575007BFFCC /* IngreTodayCell.xib */,
+				460786CC1DC1AF6E007BFFCC /* IngreHeaderView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -630,6 +645,9 @@
 		46F4B69C1DB9AF790051FC25 /* 食材 */ = {
 			isa = PBXGroup;
 			children = (
+				460786CE1DC1B0F4007BFFCC /* more_icon.png */,
+				460786C81DC19A66007BFFCC /* play-A@2x.png */,
+				460786C91DC19A66007BFFCC /* play-A@3x.png */,
 				460023991DC05501007A8270 /* search1.png */,
 			);
 			path = "食材";
@@ -786,7 +804,9 @@
 				46F4B6AB1DB9AF790051FC25 /* mine_select@3x.png in Resources */,
 				46F4B6AA1DB9AF790051FC25 /* mine_select@2x.png in Resources */,
 				46F4B6AE1DB9AF790051FC25 /* shike_select@2x.png in Resources */,
+				460786CF1DC1B0F4007BFFCC /* more_icon.png in Resources */,
 				46C8114C1DBF09F700B955F4 /* IngreLikeCell.xib in Resources */,
+				460786C71DC19575007BFFCC /* IngreTodayCell.xib in Resources */,
 				46F4B6AF1DB9AF790051FC25 /* shike_select@3x.png in Resources */,
 				46F495D61DBD9C10004ED371 /* Controllers.json in Resources */,
 				4600239A1DC05501007A8270 /* search1.png in Resources */,
@@ -794,6 +814,7 @@
 				46F4B6A01DB9AF790051FC25 /* community_normal@2x.png in Resources */,
 				46F4B6A81DB9AF790051FC25 /* mine_normal@2x.png in Resources */,
 				46F4B6A51DB9AF790051FC25 /* home_normal@3x.png in Resources */,
+				460786CB1DC19A66007BFFCC /* play-A@3x.png in Resources */,
 				46F4B6AD1DB9AF790051FC25 /* shike_normal@3x.png in Resources */,
 				46F4B6B31DB9AF790051FC25 /* shop_select@3x.png in Resources */,
 				46F4B6A71DB9AF790051FC25 /* home_select@3x.png in Resources */,
@@ -802,6 +823,7 @@
 				46F4B6A91DB9AF790051FC25 /* mine_normal@3x.png in Resources */,
 				46F4B6A11DB9AF790051FC25 /* community_normal@3x.png in Resources */,
 				46C811461DBEF39B00B955F4 /* IngreBannerCell.xib in Resources */,
+				460786CA1DC19A66007BFFCC /* play-A@2x.png in Resources */,
 				46F4B6B11DB9AF790051FC25 /* shop_normal@3x.png in Resources */,
 				46F4B6B21DB9AF790051FC25 /* shop_select@2x.png in Resources */,
 				46F4B6AC1DB9AF790051FC25 /* shike_normal@2x.png in Resources */,
@@ -886,6 +908,7 @@
 				46C811451DBEF39B00B955F4 /* IngreBannerCell.swift in Sources */,
 				4600239D1DC0598C007A8270 /* IngreRedPacketCell.swift in Sources */,
 				46E0736B1DB9B983007A880C /* UIView+Common.swift in Sources */,
+				460786C61DC19575007BFFCC /* IngreTodayCell.swift in Sources */,
 				46F4B6761DB9A9110051FC25 /* BaseViewController.swift in Sources */,
 				46F4B6781DB9A9E50051FC25 /* IngredientViewController.swift in Sources */,
 				46E0736D1DB9BA27007A880C /* UILabel+Commom.swift in Sources */,
@@ -901,6 +924,7 @@
 				46C811421DBEED7900B955F4 /* IngreRecommendView.swift in Sources */,
 				46F4B67E1DB9AA920051FC25 /* CommunityViewController.swift in Sources */,
 				46734DF21DB9C38C009D5D67 /* Const.swift in Sources */,
+				460786CD1DC1AF6E007BFFCC /* IngreHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
