@@ -64,6 +64,11 @@
 		46F4B6B11DB9AF790051FC25 /* shop_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46F4B6951DB9AF790051FC25 /* shop_normal@3x.png */; };
 		46F4B6B21DB9AF790051FC25 /* shop_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46F4B6961DB9AF790051FC25 /* shop_select@2x.png */; };
 		46F4B6B31DB9AF790051FC25 /* shop_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46F4B6971DB9AF790051FC25 /* shop_select@3x.png */; };
+		46F788D81DC2E0F20008B9EB /* IngreSceneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F788D61DC2E0F20008B9EB /* IngreSceneCell.swift */; };
+		46F788D91DC2E0F20008B9EB /* IngreSceneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46F788D71DC2E0F20008B9EB /* IngreSceneCell.xib */; };
+		46F788DB1DC2E57D0008B9EB /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 46F788DA1DC2E57D0008B9EB /* play.png */; };
+		46F788DE1DC300E50008B9EB /* IngreSceneListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F788DC1DC300E50008B9EB /* IngreSceneListCell.swift */; };
+		46F788DF1DC300E50008B9EB /* IngreSceneListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46F788DD1DC300E50008B9EB /* IngreSceneListCell.xib */; };
 		F7D1116A7D8D046CB25857A3 /* Pods_TestKitchen1607.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAC4F88AC1DB0DC668E6640 /* Pods_TestKitchen1607.framework */; };
 /* End PBXBuildFile section */
 
@@ -148,6 +153,11 @@
 		46F4B6951DB9AF790051FC25 /* shop_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop_normal@3x.png"; sourceTree = "<group>"; };
 		46F4B6961DB9AF790051FC25 /* shop_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop_select@2x.png"; sourceTree = "<group>"; };
 		46F4B6971DB9AF790051FC25 /* shop_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop_select@3x.png"; sourceTree = "<group>"; };
+		46F788D61DC2E0F20008B9EB /* IngreSceneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreSceneCell.swift; sourceTree = "<group>"; };
+		46F788D71DC2E0F20008B9EB /* IngreSceneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngreSceneCell.xib; sourceTree = "<group>"; };
+		46F788DA1DC2E57D0008B9EB /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		46F788DC1DC300E50008B9EB /* IngreSceneListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreSceneListCell.swift; sourceTree = "<group>"; };
+		46F788DD1DC300E50008B9EB /* IngreSceneListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngreSceneListCell.xib; sourceTree = "<group>"; };
 		7EAC4F88AC1DB0DC668E6640 /* Pods_TestKitchen1607.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestKitchen1607.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A7D2D3B4F4E771B7F0DE46 /* Pods-TestKitchen1607.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestKitchen1607.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestKitchen1607/Pods-TestKitchen1607.debug.xcconfig"; sourceTree = "<group>"; };
 		F9657E9D79C49AD2A6BB7141 /* Pods-TestKitchen1607.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestKitchen1607.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestKitchen1607/Pods-TestKitchen1607.release.xcconfig"; sourceTree = "<group>"; };
@@ -486,6 +496,10 @@
 				460786C41DC19575007BFFCC /* IngreTodayCell.swift */,
 				460786C51DC19575007BFFCC /* IngreTodayCell.xib */,
 				460786CC1DC1AF6E007BFFCC /* IngreHeaderView.swift */,
+				46F788D61DC2E0F20008B9EB /* IngreSceneCell.swift */,
+				46F788D71DC2E0F20008B9EB /* IngreSceneCell.xib */,
+				46F788DC1DC300E50008B9EB /* IngreSceneListCell.swift */,
+				46F788DD1DC300E50008B9EB /* IngreSceneListCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -645,6 +659,7 @@
 		46F4B69C1DB9AF790051FC25 /* 食材 */ = {
 			isa = PBXGroup;
 			children = (
+				46F788DA1DC2E57D0008B9EB /* play.png */,
 				460786CE1DC1B0F4007BFFCC /* more_icon.png */,
 				460786C81DC19A66007BFFCC /* play-A@2x.png */,
 				460786C91DC19A66007BFFCC /* play-A@3x.png */,
@@ -800,6 +815,7 @@
 			files = (
 				46F4B6A41DB9AF790051FC25 /* home_normal@2x.png in Resources */,
 				46F4B62A1DB9A50F0051FC25 /* LaunchScreen.storyboard in Resources */,
+				46F788DF1DC300E50008B9EB /* IngreSceneListCell.xib in Resources */,
 				46F4B6A31DB9AF790051FC25 /* community_select@3x.png in Resources */,
 				46F4B6AB1DB9AF790051FC25 /* mine_select@3x.png in Resources */,
 				46F4B6AA1DB9AF790051FC25 /* mine_select@2x.png in Resources */,
@@ -812,12 +828,14 @@
 				4600239A1DC05501007A8270 /* search1.png in Resources */,
 				4600239E1DC0598C007A8270 /* IngreRedPacketCell.xib in Resources */,
 				46F4B6A01DB9AF790051FC25 /* community_normal@2x.png in Resources */,
+				46F788D91DC2E0F20008B9EB /* IngreSceneCell.xib in Resources */,
 				46F4B6A81DB9AF790051FC25 /* mine_normal@2x.png in Resources */,
 				46F4B6A51DB9AF790051FC25 /* home_normal@3x.png in Resources */,
 				460786CB1DC19A66007BFFCC /* play-A@3x.png in Resources */,
 				46F4B6AD1DB9AF790051FC25 /* shike_normal@3x.png in Resources */,
 				46F4B6B31DB9AF790051FC25 /* shop_select@3x.png in Resources */,
 				46F4B6A71DB9AF790051FC25 /* home_select@3x.png in Resources */,
+				46F788DB1DC2E57D0008B9EB /* play.png in Resources */,
 				46F4B6271DB9A50F0051FC25 /* Assets.xcassets in Resources */,
 				46C811481DBEF82300B955F4 /* sdefaultImage.png in Resources */,
 				46F4B6A91DB9AF790051FC25 /* mine_normal@3x.png in Resources */,
@@ -913,6 +931,8 @@
 				46F4B6781DB9A9E50051FC25 /* IngredientViewController.swift in Sources */,
 				46E0736D1DB9BA27007A880C /* UILabel+Commom.swift in Sources */,
 				46F495DA1DBDB6CF004ED371 /* IngreRecommend.swift in Sources */,
+				46F788DE1DC300E50008B9EB /* IngreSceneListCell.swift in Sources */,
+				46F788D81DC2E0F20008B9EB /* IngreSceneCell.swift in Sources */,
 				46F4B6821DB9AB870051FC25 /* MainTabBarViewController.swift in Sources */,
 				46F4B67C1DB9AA730051FC25 /* FoodClassViewController.swift in Sources */,
 				46F4B6221DB9A50F0051FC25 /* ViewController.swift in Sources */,

@@ -10,6 +10,15 @@ import UIKit
 
 class IngreHeaderView: UIView {
 
+    //点击事件
+    var jumpClosure: IngreJumpClosure?
+    
+    var listModel: IngreRecommendWidgetList? {
+        didSet {
+            configText((listModel?.title)!)
+        }
+    }
+    
     //文字
     private var titleLabel: UILabel?
     
@@ -21,25 +30,42 @@ class IngreHeaderView: UIView {
     //文字和箭头图片的间距
     private var margin: CGFloat = 20
     //图片的宽度
-    private var iconW: CGFloat = 44
+    private var iconW: CGFloat = 32
     
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        backgroundColor = UIColor(white: 0.8, alpha: 1.0)
+        //白色背景
+        let bgView = UIView.createView()
+        bgView.backgroundColor = UIColor.whiteColor()
+        bgView.frame = CGRectMake(0, 10, bounds.size.width, 44)
+        addSubview(bgView)
+        
+        //点击事件
+        let g = UITapGestureRecognizer(target: self, action: #selector(tapAction))
+        bgView.addGestureRecognizer(g)
+        
         //文字
         titleLabel = UILabel.createLabel(nil, textAlignment: .Left, font: UIFont.systemFontOfSize(18))
-        addSubview(titleLabel!)
+        bgView.addSubview(titleLabel!)
         
         //图片
         let image = UIImage(named: "more_icon")
         imageView = UIImageView(image: image)
-        addSubview(imageView!)
+        bgView.addSubview(imageView!)
         
     }
     
+    @objc private func tapAction() {
+        if jumpClosure != nil && listModel?.title_link != nil {
+            jumpClosure!((listModel?.title_link)!)
+        }
+    }
+    
     //显示文字
-    func configText(text: String) {
+    private func configText(text: String) {
         //计算文字的宽度
         let str = NSString(string: text)
         /*
@@ -48,7 +74,7 @@ class IngreHeaderView: UIView {
          参3：文字的属性
          参4：上下文
          */
-        let maxW = bounds.size.width - space*2 - iconW - margin*2
+        let maxW = bounds.size.width - space*2 - iconW - margin
         let attr = [NSFontAttributeName: UIFont.systemFontOfSize(18)]
         let w = str.boundingRectWithSize(CGSizeMake(maxW, 44), options: .UsesLineFragmentOrigin, attributes: attr, context: nil).size.width
         
@@ -56,10 +82,10 @@ class IngreHeaderView: UIView {
         titleLabel?.text = text
         
         //修改位置
-        let labelSpaceX = (maxW-w-margin*2-iconW)/2
+        let labelSpaceX = (maxW-w)/2
         titleLabel?.frame = CGRectMake(space+labelSpaceX, 0, w, 44)
         
-        imageView?.frame = CGRectMake((titleLabel?.frame.origin.x)!, 0, iconW, iconW)
+        imageView?.frame = CGRectMake((titleLabel?.frame.origin.x)!+w+margin, 6, iconW, iconW)
         
         
     }

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingreSceneListCellId" id="KGk-i7-Jjw" customClass="IngreSceneListCell" customModule="TestKitchen1607" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="cM2-fc-G8c">
+                        <rect key="frame" x="251" y="12" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="LIc-zE-0SK"/>
+                            <constraint firstAttribute="width" constant="44" id="QMM-aO-KiJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xp3-cg-fw9">
+                        <rect key="frame" x="80" y="19" width="151" height="29.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cM2-fc-G8c" secondAttribute="trailing" constant="80" id="9Hh-Th-uou"/>
+                    <constraint firstItem="cM2-fc-G8c" firstAttribute="leading" secondItem="xp3-cg-fw9" secondAttribute="trailing" constant="20" id="CSk-Rh-4J3"/>
+                    <constraint firstAttribute="bottom" secondItem="xp3-cg-fw9" secondAttribute="bottom" constant="20" id="lWc-QO-i3W"/>
+                    <constraint firstItem="cM2-fc-G8c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="qdR-GX-gZl"/>
+                    <constraint firstItem="xp3-cg-fw9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="r6V-iS-utV"/>
+                    <constraint firstItem="xp3-cg-fw9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="80" id="yxO-1X-E67"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="xp3-cg-fw9" id="nNW-Au-eJc"/>
+            </connections>
+            <point key="canvasLocation" x="245.5" y="147"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="more_icon.png" width="44" height="44"/>
+    </resources>
+</document>

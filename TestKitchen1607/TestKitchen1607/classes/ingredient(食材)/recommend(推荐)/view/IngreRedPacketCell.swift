@@ -97,8 +97,8 @@ class IngreRedPacketCell: UITableViewCell {
             
             //设置代理
             scrollView.delegate = self
-    
         }
+        
     }
     
     func tapImage(g: UIGestureRecognizer) {
@@ -146,12 +146,21 @@ class IngreRedPacketCell: UITableViewCell {
 
 //MARK:UIScrollView代理
 extension IngreRedPacketCell: UIScrollViewDelegate {
+    
     func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+        
+        
         let firstImageView = containerView!.viewWithTag(300)
         if firstImageView?.isKindOfClass(UIImageView) == true {
-            firstImageView?.snp_makeConstraints(closure: { (make) in
+            
+            firstImageView?.snp_updateConstraints(closure: {
+                (make) in
                 make.left.equalTo(containerView!)
             })
+            
         }
+        
+        
     }
+    
 }
