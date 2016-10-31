@@ -18,6 +18,10 @@
 		460786CD1DC1AF6E007BFFCC /* IngreHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460786CC1DC1AF6E007BFFCC /* IngreHeaderView.swift */; };
 		460786CF1DC1B0F4007BFFCC /* more_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 460786CE1DC1B0F4007BFFCC /* more_icon.png */; };
 		46734DF21DB9C38C009D5D67 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46734DF11DB9C38C009D5D67 /* Const.swift */; };
+		46BC9E2A1DC6D0F200A51784 /* IngreTalnetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BC9E281DC6D0F200A51784 /* IngreTalnetCell.swift */; };
+		46BC9E2B1DC6D0F200A51784 /* IngreTalnetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46BC9E291DC6D0F200A51784 /* IngreTalnetCell.xib */; };
+		46BC9E2E1DC6DD5500A51784 /* IngrePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BC9E2C1DC6DD5500A51784 /* IngrePostCell.swift */; };
+		46BC9E2F1DC6DD5500A51784 /* IngrePostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46BC9E2D1DC6DD5500A51784 /* IngrePostCell.xib */; };
 		46C811421DBEED7900B955F4 /* IngreRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C811411DBEED7900B955F4 /* IngreRecommendView.swift */; };
 		46C811451DBEF39B00B955F4 /* IngreBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C811431DBEF39B00B955F4 /* IngreBannerCell.swift */; };
 		46C811461DBEF39B00B955F4 /* IngreBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46C811441DBEF39B00B955F4 /* IngreBannerCell.xib */; };
@@ -101,6 +105,10 @@
 		460786CC1DC1AF6E007BFFCC /* IngreHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreHeaderView.swift; sourceTree = "<group>"; };
 		460786CE1DC1B0F4007BFFCC /* more_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more_icon.png; sourceTree = "<group>"; };
 		46734DF11DB9C38C009D5D67 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		46BC9E281DC6D0F200A51784 /* IngreTalnetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreTalnetCell.swift; sourceTree = "<group>"; };
+		46BC9E291DC6D0F200A51784 /* IngreTalnetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngreTalnetCell.xib; sourceTree = "<group>"; };
+		46BC9E2C1DC6DD5500A51784 /* IngrePostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngrePostCell.swift; sourceTree = "<group>"; };
+		46BC9E2D1DC6DD5500A51784 /* IngrePostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngrePostCell.xib; sourceTree = "<group>"; };
 		46C811411DBEED7900B955F4 /* IngreRecommendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreRecommendView.swift; sourceTree = "<group>"; };
 		46C811431DBEF39B00B955F4 /* IngreBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreBannerCell.swift; sourceTree = "<group>"; };
 		46C811441DBEF39B00B955F4 /* IngreBannerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngreBannerCell.xib; sourceTree = "<group>"; };
@@ -500,6 +508,10 @@
 				46F788D71DC2E0F20008B9EB /* IngreSceneCell.xib */,
 				46F788DC1DC300E50008B9EB /* IngreSceneListCell.swift */,
 				46F788DD1DC300E50008B9EB /* IngreSceneListCell.xib */,
+				46BC9E281DC6D0F200A51784 /* IngreTalnetCell.swift */,
+				46BC9E291DC6D0F200A51784 /* IngreTalnetCell.xib */,
+				46BC9E2C1DC6DD5500A51784 /* IngrePostCell.swift */,
+				46BC9E2D1DC6DD5500A51784 /* IngrePostCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -839,6 +851,7 @@
 				46F4B6271DB9A50F0051FC25 /* Assets.xcassets in Resources */,
 				46C811481DBEF82300B955F4 /* sdefaultImage.png in Resources */,
 				46F4B6A91DB9AF790051FC25 /* mine_normal@3x.png in Resources */,
+				46BC9E2B1DC6D0F200A51784 /* IngreTalnetCell.xib in Resources */,
 				46F4B6A11DB9AF790051FC25 /* community_normal@3x.png in Resources */,
 				46C811461DBEF39B00B955F4 /* IngreBannerCell.xib in Resources */,
 				460786CA1DC19A66007BFFCC /* play-A@2x.png in Resources */,
@@ -847,6 +860,7 @@
 				46F4B6AC1DB9AF790051FC25 /* shike_normal@2x.png in Resources */,
 				46F4B6A61DB9AF790051FC25 /* home_select@2x.png in Resources */,
 				46F4B6B01DB9AF790051FC25 /* shop_normal@2x.png in Resources */,
+				46BC9E2F1DC6DD5500A51784 /* IngrePostCell.xib in Resources */,
 				46F4B6A21DB9AF790051FC25 /* community_select@2x.png in Resources */,
 				46F4B6251DB9A50F0051FC25 /* Main.storyboard in Resources */,
 			);
@@ -922,6 +936,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				460023981DC053B1007A8270 /* IngreLikeHeaderView.swift in Sources */,
+				46BC9E2A1DC6D0F200A51784 /* IngreTalnetCell.swift in Sources */,
 				46F4B67A1DB9AA540051FC25 /* MallViewController.swift in Sources */,
 				46C811451DBEF39B00B955F4 /* IngreBannerCell.swift in Sources */,
 				4600239D1DC0598C007A8270 /* IngreRedPacketCell.swift in Sources */,
@@ -937,6 +952,7 @@
 				46F4B67C1DB9AA730051FC25 /* FoodClassViewController.swift in Sources */,
 				46F4B6221DB9A50F0051FC25 /* ViewController.swift in Sources */,
 				46F4B6201DB9A50F0051FC25 /* AppDelegate.swift in Sources */,
+				46BC9E2E1DC6DD5500A51784 /* IngrePostCell.swift in Sources */,
 				46F4B6801DB9AAB00051FC25 /* ProfileViewController.swift in Sources */,
 				46C8114B1DBF09F700B955F4 /* IngreLikeCell.swift in Sources */,
 				46E0736F1DB9BB90007A880C /* UIButton+Common.swift in Sources */,
