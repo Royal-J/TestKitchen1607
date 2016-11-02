@@ -20,21 +20,32 @@ class KTCSegCtrl: UIView {
     //代理属性
     weak var delegate: KTCSegCtrlDelegate?
     
+    //下划线图片
+    private var lineView: UIImageView?
+    
     //设置当前的序号
     var selectIndex: Int = 0 {
         didSet {
-            print(oldValue)
-            //取消之前的选中状态
-            let lastBtn = viewWithTag(300+oldValue)
-            if lastBtn?.isKindOfClass(KTCSegBtn) == true {
-                let tmpBtn = lastBtn as! KTCSegBtn
-                tmpBtn.clicked = false
-            }
-            //选中当前点击按钮
-            let curBtn = viewWithTag(300+selectIndex)
-            if curBtn?.isKindOfClass(KTCSegBtn) == true {
-                let tmpBtn = curBtn as! KTCSegBtn
-                tmpBtn.clicked = true
+            //print(oldValue)
+            
+            if selectIndex != oldValue { //使当前界面不能再被点击，也可设置不能用户响应
+                //取消之前的选中状态
+                let lastBtn = viewWithTag(300+oldValue)
+                if lastBtn?.isKindOfClass(KTCSegBtn) == true {
+                    let tmpBtn = lastBtn as! KTCSegBtn
+                    tmpBtn.clicked = false
+                }
+                //选中当前点击按钮
+                let curBtn = viewWithTag(300+selectIndex)
+                if curBtn?.isKindOfClass(KTCSegBtn) == true {
+                    let tmpBtn = curBtn as! KTCSegBtn
+                    tmpBtn.clicked = true
+                }
+                
+                //修改下划线的位置
+                UIView.animateWithDuration(0.25, animations: {
+                    self.lineView?.frame.origin.x = (self.lineView?.frame.size.width)!*CGFloat(self.selectIndex)
+                })
             }
             
         }
@@ -48,6 +59,7 @@ class KTCSegCtrl: UIView {
         if titleArray.count > 0 {
             createBtns(titleArray)
         }
+        
     }
     
     //创建按钮的方法
@@ -71,8 +83,13 @@ class KTCSegCtrl: UIView {
             btn.tag = 300+i
             btn.addTarget(self, action: #selector(clickBtn(_:)), forControlEvents: .TouchUpInside)
             addSubview(btn)
-            
         }
+        
+        //创建下划线图片
+        lineView = UIImageView(frame: CGRectMake(0, bounds.size.height-66, w, 66))
+        lineView?.image = UIImage(named: "navBtn_bag")
+        //lineView?.backgroundColor = UIColor.redColor()
+        addSubview(lineView!)
         
     }
     

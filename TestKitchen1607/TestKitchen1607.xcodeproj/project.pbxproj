@@ -22,6 +22,8 @@
 		46BC9E2B1DC6D0F200A51784 /* IngreTalnetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46BC9E291DC6D0F200A51784 /* IngreTalnetCell.xib */; };
 		46BC9E2E1DC6DD5500A51784 /* IngrePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BC9E2C1DC6DD5500A51784 /* IngrePostCell.swift */; };
 		46BC9E2F1DC6DD5500A51784 /* IngrePostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46BC9E2D1DC6DD5500A51784 /* IngrePostCell.xib */; };
+		46C605EA1DC9800B00348824 /* IngreMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C605E91DC9800B00348824 /* IngreMaterial.swift */; };
+		46C605EC1DC990CC00348824 /* IngreMaterialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C605EB1DC990CC00348824 /* IngreMaterialCell.swift */; };
 		46C811421DBEED7900B955F4 /* IngreRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C811411DBEED7900B955F4 /* IngreRecommendView.swift */; };
 		46C811451DBEF39B00B955F4 /* IngreBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C811431DBEF39B00B955F4 /* IngreBannerCell.swift */; };
 		46C811461DBEF39B00B955F4 /* IngreBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46C811441DBEF39B00B955F4 /* IngreBannerCell.xib */; };
@@ -119,6 +121,8 @@
 		46BC9E291DC6D0F200A51784 /* IngreTalnetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngreTalnetCell.xib; sourceTree = "<group>"; };
 		46BC9E2C1DC6DD5500A51784 /* IngrePostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngrePostCell.swift; sourceTree = "<group>"; };
 		46BC9E2D1DC6DD5500A51784 /* IngrePostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngrePostCell.xib; sourceTree = "<group>"; };
+		46C605E91DC9800B00348824 /* IngreMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreMaterial.swift; sourceTree = "<group>"; };
+		46C605EB1DC990CC00348824 /* IngreMaterialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreMaterialCell.swift; sourceTree = "<group>"; };
 		46C811411DBEED7900B955F4 /* IngreRecommendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreRecommendView.swift; sourceTree = "<group>"; };
 		46C811431DBEF39B00B955F4 /* IngreBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreBannerCell.swift; sourceTree = "<group>"; };
 		46C811441DBEF39B00B955F4 /* IngreBannerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngreBannerCell.xib; sourceTree = "<group>"; };
@@ -477,6 +481,7 @@
 		46F4B6641DB9A82D0051FC25 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				46C605E91DC9800B00348824 /* IngreMaterial.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -485,6 +490,7 @@
 			isa = PBXGroup;
 			children = (
 				46FB87CB1DC8429000BEF37D /* IngreMaterialView.swift */,
+				46C605EB1DC990CC00348824 /* IngreMaterialCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -978,6 +984,7 @@
 				46F4B67A1DB9AA540051FC25 /* MallViewController.swift in Sources */,
 				46C811451DBEF39B00B955F4 /* IngreBannerCell.swift in Sources */,
 				4600239D1DC0598C007A8270 /* IngreRedPacketCell.swift in Sources */,
+				46C605EC1DC990CC00348824 /* IngreMaterialCell.swift in Sources */,
 				46E0736B1DB9B983007A880C /* UIView+Common.swift in Sources */,
 				460786C61DC19575007BFFCC /* IngreTodayCell.swift in Sources */,
 				46F4B6761DB9A9110051FC25 /* BaseViewController.swift in Sources */,
@@ -994,6 +1001,7 @@
 				46F4B6801DB9AAB00051FC25 /* ProfileViewController.swift in Sources */,
 				46C8114B1DBF09F700B955F4 /* IngreLikeCell.swift in Sources */,
 				46E0736F1DB9BB90007A880C /* UIButton+Common.swift in Sources */,
+				46C605EA1DC9800B00348824 /* IngreMaterial.swift in Sources */,
 				46FB87CA1DC8397600BEF37D /* KTCSegCtrl.swift in Sources */,
 				46FB87BB1DC8216300BEF37D /* IngreTopicCell.swift in Sources */,
 				46F495D81DBDACE9004ED371 /* KTCDownloader.swift in Sources */,
