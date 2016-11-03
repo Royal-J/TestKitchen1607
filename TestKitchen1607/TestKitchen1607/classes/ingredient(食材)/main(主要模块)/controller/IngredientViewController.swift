@@ -39,6 +39,9 @@ class IngredientViewController: BaseViewController {
         
         //下载首页的食材数据
         downloadRecommendMaterial()
+        
+        //下载首页的分类数据
+        downloadCategoryData()
     }
     
     //创建首页视图
@@ -142,6 +145,15 @@ class IngredientViewController: BaseViewController {
         downloader.postWituUrl(kHostUrl, params: dict)
     }
     
+    //下载首页的分类数据
+    func downloadCategoryData() {
+        let dict = ["methodName":"CategoryIndex"]
+        let downloader = KTCDownloader()
+        downloader.delegate = self
+        downloader.downloadType = .IngreCategory
+        downloader.postWituUrl(kHostUrl, params: dict)
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -183,22 +195,48 @@ extension IngredientViewController:KTCDownloaderDelegate {
                 recommendView!.model = recommendModel
                 
                 //3.点击食材的推荐页面的某一部分，跳转到后面的界面
-                recommendView!.jumpClosure = { jumpUrl in
-                    print(jumpUrl)
-                    
+                recommendView!.jumpClosure = {[unowned self] (jumpUrl) in
+                   self.handleClickEvent(jumpUrl)
                 }
             }
         }else if downloader.downloadType == .IngreMaterial {
             if let tmpData = data {
                 let model = IngreMaterial.parseData(tmpData)
-               
+                
                 materialView?.model = model
+                
+                //点击事件
+                materialView?.jumpClosure = {[unowned self] (jumpUrl) in
+                    self.handleClickEvent(jumpUrl)
+                }
+                
             }
             
         }else if downloader.downloadType == .IngreCategory {
-            
+            if let tmpData = data {
+                let model = IngreMaterial.parseData(tmpData)
+                
+                categoryView?.model = model
+                
+                //点击事件
+                categoryView?.jumpClosure = {[unowned self] (jumpUrl) in
+                    self.handleClickEvent(jumpUrl)
+                }
+            }
+
         }
     }
+    
+    
+    //处理点击事件的方法
+    func handleClickEvent(urlString: String) {
+        //print(urlString)
+        IngreService.handleEvent(urlString, onViewController: self)
+    }
+    
+    
+    
+    
 }
 
 

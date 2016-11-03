@@ -33,6 +33,23 @@
 		46E0736B1DB9B983007A880C /* UIView+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0736A1DB9B983007A880C /* UIView+Common.swift */; };
 		46E0736D1DB9BA27007A880C /* UILabel+Commom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0736C1DB9BA27007A880C /* UILabel+Commom.swift */; };
 		46E0736F1DB9BB90007A880C /* UIButton+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0736E1DB9BB90007A880C /* UIButton+Common.swift */; };
+		46E1CEC71DCAD2B900254201 /* IngreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CEC61DCAD2B900254201 /* IngreService.swift */; };
+		46E1CEC91DCAD35A00254201 /* FoodCourseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CEC81DCAD35A00254201 /* FoodCourseService.swift */; };
+		46E1CECB1DCAD3C600254201 /* WebViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CECA1DCAD3C600254201 /* WebViewService.swift */; };
+		46E1CECD1DCAD3E700254201 /* FoodMatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CECC1DCAD3E700254201 /* FoodMatchService.swift */; };
+		46E1CECF1DCAD40100254201 /* SceneListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CECE1DCAD40100254201 /* SceneListService.swift */; };
+		46E1CED11DCAD41D00254201 /* FavoriteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CED01DCAD41D00254201 /* FavoriteService.swift */; };
+		46E1CED31DCAD43000254201 /* SceneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CED21DCAD43000254201 /* SceneService.swift */; };
+		46E1CED51DCAD44100254201 /* DishService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CED41DCAD44100254201 /* DishService.swift */; };
+		46E1CED71DCAD44E00254201 /* VideoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CED61DCAD44E00254201 /* VideoService.swift */; };
+		46E1CED91DCAD47400254201 /* TalnetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CED81DCAD47400254201 /* TalnetService.swift */; };
+		46E1CEDB1DCAD48600254201 /* RecommendTalnetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CEDA1DCAD48600254201 /* RecommendTalnetService.swift */; };
+		46E1CEDD1DCAD4C000254201 /* BoutiquepostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CEDC1DCAD4C000254201 /* BoutiquepostService.swift */; };
+		46E1CEDF1DCAD4D000254201 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CEDE1DCAD4D000254201 /* PostService.swift */; };
+		46E1CEE11DCAD4EA00254201 /* SubjectListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CEE01DCAD4EA00254201 /* SubjectListService.swift */; };
+		46E1CEE31DCAD50300254201 /* MaterialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CEE21DCAD50300254201 /* MaterialService.swift */; };
+		46E1CEE51DCADE5400254201 /* FoodCourseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CEE41DCADE5400254201 /* FoodCourseController.swift */; };
+		46E1CEE71DCAE1F700254201 /* FoodCourseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CEE61DCAE1F700254201 /* FoodCourseDetail.swift */; };
 		46F495D61DBD9C10004ED371 /* Controllers.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F495D51DBD9C10004ED371 /* Controllers.json */; };
 		46F495D81DBDACE9004ED371 /* KTCDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F495D71DBDACE9004ED371 /* KTCDownloader.swift */; };
 		46F495DA1DBDB6CF004ED371 /* IngreRecommend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F495D91DBDB6CF004ED371 /* IngreRecommend.swift */; };
@@ -132,6 +149,23 @@
 		46E0736A1DB9B983007A880C /* UIView+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Common.swift"; sourceTree = "<group>"; };
 		46E0736C1DB9BA27007A880C /* UILabel+Commom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Commom.swift"; sourceTree = "<group>"; };
 		46E0736E1DB9BB90007A880C /* UIButton+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Common.swift"; sourceTree = "<group>"; };
+		46E1CEC61DCAD2B900254201 /* IngreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreService.swift; sourceTree = "<group>"; };
+		46E1CEC81DCAD35A00254201 /* FoodCourseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCourseService.swift; sourceTree = "<group>"; };
+		46E1CECA1DCAD3C600254201 /* WebViewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewService.swift; sourceTree = "<group>"; };
+		46E1CECC1DCAD3E700254201 /* FoodMatchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodMatchService.swift; sourceTree = "<group>"; };
+		46E1CECE1DCAD40100254201 /* SceneListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneListService.swift; sourceTree = "<group>"; };
+		46E1CED01DCAD41D00254201 /* FavoriteService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteService.swift; sourceTree = "<group>"; };
+		46E1CED21DCAD43000254201 /* SceneService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneService.swift; sourceTree = "<group>"; };
+		46E1CED41DCAD44100254201 /* DishService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishService.swift; sourceTree = "<group>"; };
+		46E1CED61DCAD44E00254201 /* VideoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoService.swift; sourceTree = "<group>"; };
+		46E1CED81DCAD47400254201 /* TalnetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalnetService.swift; sourceTree = "<group>"; };
+		46E1CEDA1DCAD48600254201 /* RecommendTalnetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendTalnetService.swift; sourceTree = "<group>"; };
+		46E1CEDC1DCAD4C000254201 /* BoutiquepostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoutiquepostService.swift; sourceTree = "<group>"; };
+		46E1CEDE1DCAD4D000254201 /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		46E1CEE01DCAD4EA00254201 /* SubjectListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectListService.swift; sourceTree = "<group>"; };
+		46E1CEE21DCAD50300254201 /* MaterialService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialService.swift; sourceTree = "<group>"; };
+		46E1CEE41DCADE5400254201 /* FoodCourseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCourseController.swift; sourceTree = "<group>"; };
+		46E1CEE61DCAE1F700254201 /* FoodCourseDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCourseDetail.swift; sourceTree = "<group>"; };
 		46F495D51DBD9C10004ED371 /* Controllers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Controllers.json; sourceTree = "<group>"; };
 		46F495D71DBDACE9004ED371 /* KTCDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTCDownloader.swift; sourceTree = "<group>"; };
 		46F495D91DBDB6CF004ED371 /* IngreRecommend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreRecommend.swift; sourceTree = "<group>"; };
@@ -221,6 +255,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46E1CEC51DCAD29D00254201 /* service(处理公共点击事件) */ = {
+			isa = PBXGroup;
+			children = (
+				46E1CEC61DCAD2B900254201 /* IngreService.swift */,
+				46E1CEC81DCAD35A00254201 /* FoodCourseService.swift */,
+				46E1CECA1DCAD3C600254201 /* WebViewService.swift */,
+				46E1CECC1DCAD3E700254201 /* FoodMatchService.swift */,
+				46E1CECE1DCAD40100254201 /* SceneListService.swift */,
+				46E1CED01DCAD41D00254201 /* FavoriteService.swift */,
+				46E1CED21DCAD43000254201 /* SceneService.swift */,
+				46E1CED41DCAD44100254201 /* DishService.swift */,
+				46E1CED61DCAD44E00254201 /* VideoService.swift */,
+				46E1CEDA1DCAD48600254201 /* RecommendTalnetService.swift */,
+				46E1CED81DCAD47400254201 /* TalnetService.swift */,
+				46E1CEDC1DCAD4C000254201 /* BoutiquepostService.swift */,
+				46E1CEDE1DCAD4D000254201 /* PostService.swift */,
+				46E1CEE01DCAD4EA00254201 /* SubjectListService.swift */,
+				46E1CEE21DCAD50300254201 /* MaterialService.swift */,
+			);
+			path = "service(处理公共点击事件)";
+			sourceTree = "<group>";
+		};
 		46F4B6131DB9A50F0051FC25 = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +444,7 @@
 		46F4B6591DB9A82D0051FC25 /* ingredient(食材) */ = {
 			isa = PBXGroup;
 			children = (
+				46E1CEC51DCAD29D00254201 /* service(处理公共点击事件) */,
 				46F4B65A1DB9A82D0051FC25 /* category(分类) */,
 				46F4B65E1DB9A82D0051FC25 /* main(主要模块) */,
 				46F4B6621DB9A82D0051FC25 /* material(食材) */,
@@ -508,6 +565,7 @@
 		46F4B6671DB9A82D0051FC25 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				46E1CEE41DCADE5400254201 /* FoodCourseController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -515,6 +573,7 @@
 		46F4B6681DB9A82D0051FC25 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				46E1CEE61DCAE1F700254201 /* FoodCourseDetail.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -978,7 +1037,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E1CECF1DCAD40100254201 /* SceneListService.swift in Sources */,
 				46FB87CC1DC8429000BEF37D /* IngreMaterialView.swift in Sources */,
+				46E1CEDB1DCAD48600254201 /* RecommendTalnetService.swift in Sources */,
 				460023981DC053B1007A8270 /* IngreLikeHeaderView.swift in Sources */,
 				46BC9E2A1DC6D0F200A51784 /* IngreTalnetCell.swift in Sources */,
 				46F4B67A1DB9AA540051FC25 /* MallViewController.swift in Sources */,
@@ -987,27 +1048,42 @@
 				46C605EC1DC990CC00348824 /* IngreMaterialCell.swift in Sources */,
 				46E0736B1DB9B983007A880C /* UIView+Common.swift in Sources */,
 				460786C61DC19575007BFFCC /* IngreTodayCell.swift in Sources */,
+				46E1CED51DCAD44100254201 /* DishService.swift in Sources */,
+				46E1CEE31DCAD50300254201 /* MaterialService.swift in Sources */,
+				46E1CEE71DCAE1F700254201 /* FoodCourseDetail.swift in Sources */,
 				46F4B6761DB9A9110051FC25 /* BaseViewController.swift in Sources */,
+				46E1CECD1DCAD3E700254201 /* FoodMatchService.swift in Sources */,
 				46F4B6781DB9A9E50051FC25 /* IngredientViewController.swift in Sources */,
 				46E0736D1DB9BA27007A880C /* UILabel+Commom.swift in Sources */,
 				46F495DA1DBDB6CF004ED371 /* IngreRecommend.swift in Sources */,
 				46F788DE1DC300E50008B9EB /* IngreSceneListCell.swift in Sources */,
 				46F788D81DC2E0F20008B9EB /* IngreSceneCell.swift in Sources */,
+				46E1CECB1DCAD3C600254201 /* WebViewService.swift in Sources */,
+				46E1CEC91DCAD35A00254201 /* FoodCourseService.swift in Sources */,
+				46E1CED11DCAD41D00254201 /* FavoriteService.swift in Sources */,
 				46F4B6821DB9AB870051FC25 /* MainTabBarViewController.swift in Sources */,
 				46F4B67C1DB9AA730051FC25 /* FoodClassViewController.swift in Sources */,
+				46E1CEE11DCAD4EA00254201 /* SubjectListService.swift in Sources */,
 				46F4B6221DB9A50F0051FC25 /* ViewController.swift in Sources */,
 				46F4B6201DB9A50F0051FC25 /* AppDelegate.swift in Sources */,
+				46E1CEDD1DCAD4C000254201 /* BoutiquepostService.swift in Sources */,
+				46E1CEDF1DCAD4D000254201 /* PostService.swift in Sources */,
+				46E1CEC71DCAD2B900254201 /* IngreService.swift in Sources */,
 				46BC9E2E1DC6DD5500A51784 /* IngrePostCell.swift in Sources */,
 				46F4B6801DB9AAB00051FC25 /* ProfileViewController.swift in Sources */,
 				46C8114B1DBF09F700B955F4 /* IngreLikeCell.swift in Sources */,
+				46E1CED71DCAD44E00254201 /* VideoService.swift in Sources */,
 				46E0736F1DB9BB90007A880C /* UIButton+Common.swift in Sources */,
 				46C605EA1DC9800B00348824 /* IngreMaterial.swift in Sources */,
 				46FB87CA1DC8397600BEF37D /* KTCSegCtrl.swift in Sources */,
 				46FB87BB1DC8216300BEF37D /* IngreTopicCell.swift in Sources */,
 				46F495D81DBDACE9004ED371 /* KTCDownloader.swift in Sources */,
+				46E1CED91DCAD47400254201 /* TalnetService.swift in Sources */,
 				46C811421DBEED7900B955F4 /* IngreRecommendView.swift in Sources */,
 				46F4B67E1DB9AA920051FC25 /* CommunityViewController.swift in Sources */,
 				46734DF21DB9C38C009D5D67 /* Const.swift in Sources */,
+				46E1CED31DCAD43000254201 /* SceneService.swift in Sources */,
+				46E1CEE51DCADE5400254201 /* FoodCourseController.swift in Sources */,
 				460786CD1DC1AF6E007BFFCC /* IngreHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

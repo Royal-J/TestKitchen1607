@@ -10,6 +10,9 @@ import UIKit
 
 class IngreMaterialView: UIView {
 
+    //点击事件
+    var jumpClosure: IngreJumpClosure?
+    
     //表格
     private var tbView: UITableView?
     
@@ -57,7 +60,10 @@ extension IngreMaterialView: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 500
+        
+        let tmpModel = model?.data?.data![indexPath.row]
+        
+        return IngreMaterialCell.heightForCellWithModel(tmpModel!)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -68,6 +74,9 @@ extension IngreMaterialView: UITableViewDelegate,UITableViewDataSource {
         }
         //显示数据
         cell?.cellModel = model?.data?.data![indexPath.row]
+        //点击事件
+        cell?.jumpClosure = jumpClosure
+        cell?.selectionStyle = .None
         return cell!
     }
 }

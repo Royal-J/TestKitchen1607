@@ -24,6 +24,9 @@ enum KTCDownloadType: Int {
     case IngreRecommend   //首页食材视图控制器的推荐视图
     case IngreMaterial    //首页食材视图控制器的食材视图
     case IngreCategory    //首页食材视图控制器的分类视图
+    
+    case IngreFoodCourseDetail  //首页食材的广告页的详情
+    case IngreFoodCourseComment  //首页食材的广告页的评论
 }
 
 
