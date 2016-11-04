@@ -15,6 +15,16 @@
 		469D3CF21DCC24B8006A0F72 /* FCSubjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D3CF01DCC24B8006A0F72 /* FCSubjectCell.swift */; };
 		469D3CF31DCC24B8006A0F72 /* FCSubjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469D3CF11DCC24B8006A0F72 /* FCSubjectCell.xib */; };
 		469D3CF51DCC2F1B006A0F72 /* FCSerialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D3CF41DCC2F1B006A0F72 /* FCSerialCell.swift */; };
+		469D3CF71DCC5E2F006A0F72 /* FoodCourseComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D3CF61DCC5E2F006A0F72 /* FoodCourseComment.swift */; };
+		469D3CFA1DCC643B006A0F72 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D3CF81DCC643B006A0F72 /* CommentCell.swift */; };
+		469D3CFB1DCC643B006A0F72 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469D3CF91DCC643B006A0F72 /* CommentCell.xib */; };
+		469D3D001DCC64DC006A0F72 /* report_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 469D3CFC1DCC64DC006A0F72 /* report_normal@2x.png */; };
+		469D3D011DCC64DC006A0F72 /* report_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 469D3CFD1DCC64DC006A0F72 /* report_normal@3x.png */; };
+		469D3D021DCC64DC006A0F72 /* report_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 469D3CFE1DCC64DC006A0F72 /* report_select@2x.png */; };
+		469D3D031DCC64DC006A0F72 /* report_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 469D3CFF1DCC64DC006A0F72 /* report_select@3x.png */; };
+		469D3D051DCC751B006A0F72 /* KTCTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D3D041DCC751B006A0F72 /* KTCTabViewController.swift */; };
+		469D3D181DCC8493006A0F72 /* FCCommentHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D3D161DCC8493006A0F72 /* FCCommentHeader.swift */; };
+		469D3D191DCC8493006A0F72 /* FCCommentHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469D3D171DCC8493006A0F72 /* FCCommentHeader.xib */; };
 		46C605EA1DC9800B00348824 /* IngreMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C605E91DC9800B00348824 /* IngreMaterial.swift */; };
 		46C605EC1DC990CC00348824 /* IngreMaterialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C605EB1DC990CC00348824 /* IngreMaterialCell.swift */; };
 		46C811421DBEED7900B955F4 /* IngreRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C811411DBEED7900B955F4 /* IngreRecommendView.swift */; };
@@ -136,6 +146,16 @@
 		469D3CF01DCC24B8006A0F72 /* FCSubjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCSubjectCell.swift; sourceTree = "<group>"; };
 		469D3CF11DCC24B8006A0F72 /* FCSubjectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCSubjectCell.xib; sourceTree = "<group>"; };
 		469D3CF41DCC2F1B006A0F72 /* FCSerialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCSerialCell.swift; sourceTree = "<group>"; };
+		469D3CF61DCC5E2F006A0F72 /* FoodCourseComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCourseComment.swift; sourceTree = "<group>"; };
+		469D3CF81DCC643B006A0F72 /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		469D3CF91DCC643B006A0F72 /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		469D3CFC1DCC64DC006A0F72 /* report_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "report_normal@2x.png"; sourceTree = "<group>"; };
+		469D3CFD1DCC64DC006A0F72 /* report_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "report_normal@3x.png"; sourceTree = "<group>"; };
+		469D3CFE1DCC64DC006A0F72 /* report_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "report_select@2x.png"; sourceTree = "<group>"; };
+		469D3CFF1DCC64DC006A0F72 /* report_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "report_select@3x.png"; sourceTree = "<group>"; };
+		469D3D041DCC751B006A0F72 /* KTCTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTCTabViewController.swift; sourceTree = "<group>"; };
+		469D3D161DCC8493006A0F72 /* FCCommentHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCommentHeader.swift; sourceTree = "<group>"; };
+		469D3D171DCC8493006A0F72 /* FCCommentHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCCommentHeader.xib; sourceTree = "<group>"; };
 		46C605E91DC9800B00348824 /* IngreMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreMaterial.swift; sourceTree = "<group>"; };
 		46C605EB1DC990CC00348824 /* IngreMaterialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreMaterialCell.swift; sourceTree = "<group>"; };
 		46C811411DBEED7900B955F4 /* IngreRecommendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreRecommendView.swift; sourceTree = "<group>"; };
@@ -367,6 +387,7 @@
 				46F495D51DBD9C10004ED371 /* Controllers.json */,
 				46F495D71DBDACE9004ED371 /* KTCDownloader.swift */,
 				46FB87C91DC8397600BEF37D /* KTCSegCtrl.swift */,
+				469D3D041DCC751B006A0F72 /* KTCTabViewController.swift */,
 			);
 			path = "common(公共类)";
 			sourceTree = "<group>";
@@ -732,6 +753,10 @@
 		46F4B69C1DB9AF790051FC25 /* 食材 */ = {
 			isa = PBXGroup;
 			children = (
+				469D3CFC1DCC64DC006A0F72 /* report_normal@2x.png */,
+				469D3CFD1DCC64DC006A0F72 /* report_normal@3x.png */,
+				469D3CFE1DCC64DC006A0F72 /* report_select@2x.png */,
+				469D3CFF1DCC64DC006A0F72 /* report_select@3x.png */,
 				46F788DA1DC2E57D0008B9EB /* play.png */,
 				460786CE1DC1B0F4007BFFCC /* more_icon.png */,
 				460786C81DC19A66007BFFCC /* play-A@2x.png */,
@@ -783,6 +808,7 @@
 			isa = PBXGroup;
 			children = (
 				46F52E411DCC17F9002125F8 /* FoodCourseDetail.swift */,
+				469D3CF61DCC5E2F006A0F72 /* FoodCourseComment.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -795,6 +821,10 @@
 				469D3CF01DCC24B8006A0F72 /* FCSubjectCell.swift */,
 				469D3CF11DCC24B8006A0F72 /* FCSubjectCell.xib */,
 				469D3CF41DCC2F1B006A0F72 /* FCSerialCell.swift */,
+				469D3CF81DCC643B006A0F72 /* CommentCell.swift */,
+				469D3CF91DCC643B006A0F72 /* CommentCell.xib */,
+				469D3D161DCC8493006A0F72 /* FCCommentHeader.swift */,
+				469D3D171DCC8493006A0F72 /* FCCommentHeader.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -976,8 +1006,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				46F4B6A41DB9AF790051FC25 /* home_normal@2x.png in Resources */,
+				469D3D021DCC64DC006A0F72 /* report_select@2x.png in Resources */,
 				46F4B62A1DB9A50F0051FC25 /* LaunchScreen.storyboard in Resources */,
 				46F4B6A31DB9AF790051FC25 /* community_select@3x.png in Resources */,
+				469D3CFB1DCC643B006A0F72 /* CommentCell.xib in Resources */,
 				46F4B6AB1DB9AF790051FC25 /* mine_select@3x.png in Resources */,
 				46F52E6D1DCC17F9002125F8 /* IngreTalnetCell.xib in Resources */,
 				46F52E6F1DCC17F9002125F8 /* IngreTodayCell.xib in Resources */,
@@ -987,11 +1019,14 @@
 				46F4B6AF1DB9AF790051FC25 /* shike_select@3x.png in Resources */,
 				46F52E6B1DCC17F9002125F8 /* IngreSceneListCell.xib in Resources */,
 				46F495D61DBD9C10004ED371 /* Controllers.json in Resources */,
+				469D3D001DCC64DC006A0F72 /* report_normal@2x.png in Resources */,
 				4600239A1DC05501007A8270 /* search1.png in Resources */,
 				469D3CF31DCC24B8006A0F72 /* FCSubjectCell.xib in Resources */,
+				469D3D011DCC64DC006A0F72 /* report_normal@3x.png in Resources */,
 				46F4B6A01DB9AF790051FC25 /* community_normal@2x.png in Resources */,
 				46F52E711DCC17F9002125F8 /* IngreTopicCell.xib in Resources */,
 				46F4B6A81DB9AF790051FC25 /* mine_normal@2x.png in Resources */,
+				469D3D191DCC8493006A0F72 /* FCCommentHeader.xib in Resources */,
 				46F4B6A51DB9AF790051FC25 /* home_normal@3x.png in Resources */,
 				460786CB1DC19A66007BFFCC /* play-A@3x.png in Resources */,
 				46F52E621DCC17F9002125F8 /* IngreLikeCell.xib in Resources */,
@@ -1004,6 +1039,7 @@
 				46FB87C81DC8304400BEF37D /* navBtn_bag.png in Resources */,
 				46FB87C31DC82FA100BEF37D /* search@2x.png in Resources */,
 				46F52E671DCC17F9002125F8 /* IngreRedPacketCell.xib in Resources */,
+				469D3D031DCC64DC006A0F72 /* report_select@3x.png in Resources */,
 				46D0D4B21DCC19D600500B91 /* FCVideoCell.xib in Resources */,
 				46F4B6271DB9A50F0051FC25 /* Assets.xcassets in Resources */,
 				46FB87C71DC8304400BEF37D /* navBar.png in Resources */,
@@ -1097,6 +1133,7 @@
 				46E1CECF1DCAD40100254201 /* SceneListService.swift in Sources */,
 				46F52E5C1DCC17F9002125F8 /* FoodCourseDetail.swift in Sources */,
 				46FB87CC1DC8429000BEF37D /* IngreMaterialView.swift in Sources */,
+				469D3CFA1DCC643B006A0F72 /* CommentCell.swift in Sources */,
 				46F52E701DCC17F9002125F8 /* IngreTopicCell.swift in Sources */,
 				46E1CEDB1DCAD48600254201 /* RecommendTalnetService.swift in Sources */,
 				46F4B67A1DB9AA540051FC25 /* MallViewController.swift in Sources */,
@@ -1104,10 +1141,12 @@
 				46E0736B1DB9B983007A880C /* UIView+Common.swift in Sources */,
 				46E1CED51DCAD44100254201 /* DishService.swift in Sources */,
 				46E1CEE31DCAD50300254201 /* MaterialService.swift in Sources */,
+				469D3CF71DCC5E2F006A0F72 /* FoodCourseComment.swift in Sources */,
 				46F4B6761DB9A9110051FC25 /* BaseViewController.swift in Sources */,
 				46E1CECD1DCAD3E700254201 /* FoodMatchService.swift in Sources */,
 				46F4B6781DB9A9E50051FC25 /* IngredientViewController.swift in Sources */,
 				46E0736D1DB9BA27007A880C /* UILabel+Commom.swift in Sources */,
+				469D3D181DCC8493006A0F72 /* FCCommentHeader.swift in Sources */,
 				46F495DA1DBDB6CF004ED371 /* IngreRecommend.swift in Sources */,
 				46D0D4B11DCC19D600500B91 /* FCVideoCell.swift in Sources */,
 				46E1CECB1DCAD3C600254201 /* WebViewService.swift in Sources */,
@@ -1129,6 +1168,7 @@
 				46E1CEC71DCAD2B900254201 /* IngreService.swift in Sources */,
 				46F4B6801DB9AAB00051FC25 /* ProfileViewController.swift in Sources */,
 				46E1CED71DCAD44E00254201 /* VideoService.swift in Sources */,
+				469D3D051DCC751B006A0F72 /* KTCTabViewController.swift in Sources */,
 				46F52E6A1DCC17F9002125F8 /* IngreSceneListCell.swift in Sources */,
 				46E0736F1DB9BB90007A880C /* UIButton+Common.swift in Sources */,
 				46F52E641DCC17F9002125F8 /* IngrePostCell.swift in Sources */,

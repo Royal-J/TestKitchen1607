@@ -25,7 +25,6 @@ class FCSerialCell: UITableViewCell {
     //设置选中按钮的序号
     var selectIndex: Int = -1 {
         didSet {
-            if selectIndex != oldValue {
                 //1.取消之前按钮的选中
                 if oldValue >= 0 {
                     let lastBtn = contentView.viewWithTag(200+oldValue) as! UIButton
@@ -34,15 +33,13 @@ class FCSerialCell: UITableViewCell {
                 }
                 
                 //2.选中当前按钮
-                let curBtn = contentView.viewWithTag(200+selectIndex) as! UIButton
-                curBtn.backgroundColor = UIColor.orangeColor()
-                curBtn.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-                
-                //3.切换其他cell上面的数据
-                if clickClosure != nil {
-                    clickClosure!(selectIndex)
+                if selectIndex >= 0 {
+                    let curBtn = contentView.viewWithTag(200+selectIndex) as! UIButton
+                    curBtn.backgroundColor = UIColor.orangeColor()
+                    curBtn.setTitleColor(UIColor.whiteColor(), forState: .Normal)
                 }
-            }
+                
+            
         }
     }
     
@@ -111,6 +108,12 @@ class FCSerialCell: UITableViewCell {
         let index = btn.tag-200
         
         selectIndex = index
+        
+        //3.切换其他cell上面的数据
+        if clickClosure != nil {
+            clickClosure!(selectIndex)
+        }
+
     }
     
     class func heightForSerialCell(num: Int) -> CGFloat {
